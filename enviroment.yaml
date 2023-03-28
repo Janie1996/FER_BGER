@@ -1,4 +1,4 @@
-name: weijie
+name: FER
 channels:
   - pytorch
   - c3i_test2
