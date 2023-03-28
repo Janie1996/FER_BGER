@@ -22,7 +22,7 @@ You can create an anaconda environment with:
 
 ```
 conda env create -f environment.yaml
-conda activate MSRFG
+conda activate FER
 ```
 
 ## Usage
@@ -84,7 +84,7 @@ In this section, we introduce the proposed body gesture-based method for emotion
          'python Gesture/src/x_y_cnn.py'
 
 
-More details coming soon ...
+**More details coming soon ...**
 
 If you have questions, feel free to contact weijie_xjtu@stu.xjtu.edu.cn
 
