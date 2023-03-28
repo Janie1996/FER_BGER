@@ -8,7 +8,7 @@ PyTorch implementation for the paper:
 
 - Submitted to: EXPERT SYSTEMS WITH APPLICATIONS
 
-- Abstract: Recent research has shown that facial expressions and body gestures are two significant implications in identifying human emotions. However, these studies mainly focus on contextual information of adjacent frames, and rarely explore the spatio-temporal relationships between distant or global frames. In this paper, we revisit the facial expression and body gesture emotion recognition problems, and propose to improve the performance of video emotion recognition by extracting the spatio-temporal features via further encoding temporal information. Specifically, for facial expression, we propose a super image-based spatio-temporal convolutional model (SISTCM) and a two-stream LSTM model to capture the local spatio-temporal features and learn global temporal cues of emotion changes. For body gestures, a novel representation method and an attention-based channel-wise convolutional model (ACCM) are introduced to learn key joints features and independent characteristics of each joint. Extensive experiments on five common datasets are carried out to prove the superiority of the proposed method, and the results proved learning two visual information leads to significant improvement over the existing sota methods.  
+- Abstract: Recent research has shown that facial expressions and body gestures are two significant implications in identifying human emotions. However, these studies mainly focus on contextual information of adjacent frames, and rarely explore the spatio-temporal relationships between distant or global frames. In this paper, we revisit the facial expression and body gesture emotion recognition problems, and propose to improve the performance of video emotion recognition by extracting the spatio-temporal features via further encoding temporal information. Specifically, for facial expression, we propose a super image-based spatio-temporal convolutional model (SISTCM) and a two-stream LSTM model to capture the local spatio-temporal features and learn global temporal cues of emotion changes. For body gestures, a novel representation method and an attention-based channel-wise convolutional model (ACCM) are introduced to learn key joints features and independent characteristics of each joint. Extensive experiments on five common datasets are carried out to prove the superiority of the proposed method, and the results proved learning two visual information leads to significant improvement over the existing sota methods.
 
 ## Getting Started
 
@@ -34,6 +34,7 @@ The proposed facial expression-based approach for emotion recognition is introdu
 #### 1. Preparation
     
     a. Download dataset  (Take CK+ for example)
+        'http://www.jeffcohn.net/Resources/'
 
     b. Use DBFace to detect and position face 
         'https://github.com/dlunion/DBFace
@@ -48,7 +49,7 @@ The proposed facial expression-based approach for emotion recognition is introdu
 #### 3. Train
     Run SISTCM + TLSTM (proposed)
 
-     'python Facial/src/train_CK+.py'
+        'python Facial/src/train_CK+.py'
     
     Run Resnet + TLSTM
 
@@ -59,7 +60,7 @@ In this section, we introduce the proposed body gesture-based method for emotion
 
 #### 1. Preparation
     
-    a. Download dataset
+    a. Download dataset (Take Emily for example)
     
     b. Use Openpose or PoseNet to extract joints position
         'https://github.com/CMU-Perceptual-Computing-Lab/openpose'
@@ -73,11 +74,14 @@ In this section, we introduce the proposed body gesture-based method for emotion
 #### 2. Test
     Run (proposed)
 
-        'python '
-
+        
 
 #### 3. Train
-     'python ' 
+    1. Body Gesture Representation
+        - Body Gesture Representation Without Timeline:   x_y_one_potion.py    
+        - Body Gesture Representation With Timeline:      x_y_oneroot.py
+    2. Experiments
+         'python Gesture/src/x_y_cnn.py'
 
 
 If you have questions, feel free to contact weijie_xjtu@stu.xjtu.edu.cn
