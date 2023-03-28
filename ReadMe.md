@@ -84,6 +84,8 @@ In this section, we introduce the proposed body gesture-based method for emotion
          'python Gesture/src/x_y_cnn.py'
 
 
+More details coming soon ...
+
 If you have questions, feel free to contact weijie_xjtu@stu.xjtu.edu.cn
 
 ## Acknowledgements
